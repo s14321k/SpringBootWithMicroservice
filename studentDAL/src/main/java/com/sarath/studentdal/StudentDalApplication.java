@@ -1,4 +1,4 @@
-package com.sarath.student.dal.studentdal;
+package com.sarath.studentdal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

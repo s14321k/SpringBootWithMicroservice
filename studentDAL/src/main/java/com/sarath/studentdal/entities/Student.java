@@ -1,4 +1,4 @@
-package com.sarath.student.dal.studentdal.entities;
+package com.sarath.studentdal.entities;
 
 import jakarta.persistence.*;
 

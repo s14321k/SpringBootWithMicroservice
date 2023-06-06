@@ -1,7 +1,7 @@
-package com.sarath.student.dal.studentdal;
+package com.sarath.studentdal;
 
-import com.sarath.student.dal.studentdal.entities.Student;
-import com.sarath.student.dal.studentdal.repository.StudentRepo;
+import com.sarath.studentdal.entities.Student;
+import com.sarath.studentdal.repository.StudentRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

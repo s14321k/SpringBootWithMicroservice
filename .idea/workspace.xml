@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/displayAllLocations.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/CreateLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/jsps/CreateLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/jsps/displayAllLocations.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\LocationWeb\src\main\webapp\WEB-INF\views" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
@@ -125,6 +127,7 @@
       <workItem from="1686147488426" duration="97000" />
       <workItem from="1686147614652" duration="1223000" />
       <workItem from="1686158067680" duration="119000" />
+      <workItem from="1686158275049" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -133,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686147832266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations">
+      <created>1686158572577</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686158572577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working in eclipse" />
-    <option name="LAST_COMMIT_MESSAGE" value="working in eclipse" />
+    <MESSAGE value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
   </component>
 </project>

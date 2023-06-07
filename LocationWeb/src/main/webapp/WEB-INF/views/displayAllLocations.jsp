@@ -25,10 +25,10 @@
   </tr>
   <c:forEach items="${listLocation}" var="location">
     <tr>
-      <td>${listLocation.id}</td>
-      <td>${listLocation.code}</td>
-      <td>${listLocation.name}</td>
-      <td>${listLocation.type}</td>
+      <td>${location.id}</td>
+      <td>${location.code}</td>
+      <td>${location.name}</td>
+      <td>${location.type}</td>
     </tr>
   </c:forEach>
 </table>

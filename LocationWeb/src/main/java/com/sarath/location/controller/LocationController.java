@@ -2,12 +2,12 @@ package com.sarath.location.controller;
 
 import com.sarath.location.entities.Location;
 import com.sarath.location.service.LocationService;
-
-import org.hibernate.mapping.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller // -> This returns the CreateLocation.jsp page in return
 //@RestController -> This returns only the name CreateLocation in return
@@ -35,8 +35,8 @@ public class LocationController
     @GetMapping("/listAllLocations")
     public String displayLocations(ModelMap map)
     {
-    	List listLocation = (List) locationService.getAllLocation();
-        map.addAttribute("listLocations", listLocation);
+    	List<Location> listLocation = locationService.getAllLocation();
+        map.addAttribute("listLocation", listLocation);
     	return "displayAllLocations";
     }
 }

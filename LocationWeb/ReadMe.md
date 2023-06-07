@@ -12,6 +12,16 @@ type varchar(10)
 );
 ````
 
+## Tomcat port stop
+`Web server failed to start. Port 8080 was already in use.`
+
+Open cmd as admin
+
+netstat -a -o -n
+
+taskkill /F /PID <PID of 8080>
+
+
 
 ***************************
 APPLICATION FAILED TO START

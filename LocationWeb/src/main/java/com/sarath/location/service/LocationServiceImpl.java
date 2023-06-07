@@ -2,6 +2,8 @@ package com.sarath.location.service;
 
 import com.sarath.location.entities.Location;
 import com.sarath.location.repository.LocationRepo;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,6 +11,7 @@ import java.util.List;
 @Service
 public class LocationServiceImpl implements LocationService
 {
+	@Autowired
     LocationRepo locationRepo;
 
     @Override

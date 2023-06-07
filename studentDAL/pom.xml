@@ -8,18 +8,22 @@
         <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.sarath.student.dal</groupId>
+    <groupId>com.sarath.studentdal</groupId>
     <artifactId>studentDAL</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>studentDAL</name>
     <description>studentDAL</description>
     <properties>
-        <java.version>20</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>

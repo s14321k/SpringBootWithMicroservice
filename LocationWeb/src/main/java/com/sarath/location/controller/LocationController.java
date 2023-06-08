@@ -33,10 +33,57 @@ public class LocationController
     }
 
     @GetMapping("/listAllLocations")
-    public String displayLocations(ModelMap map)
+    public String displayLocations(ModelMap resModMap)
     {
     	List<Location> listLocation = locationService.getAllLocation();
-        map.addAttribute("listLocation", listLocation);
+        resModMap.addAttribute("listLocation", listLocation);
     	return "displayAllLocations";
     }
+
+    @DeleteMapping("/deleteLocation/{id}")
+    public String deleteLocation(@PathVariable int id, ModelMap resModMap)
+    {
+        //Location location = locationService.getLocationByID(id);
+        Location location = new Location();
+        location.setId(id);
+        locationService.deleteLocation(location);
+        List<Location> allLocations = locationService.getAllLocation();
+        resModMap.addAttribute("allLocations", allLocations);
+        return "displayAllLocations";
+    }
+	/*
+	 * @RequestMapping("/deleteLocation") public String
+	 * deleteLocation(@RequestParam("id") int id, ModelMap resModMap) { //Location
+	 * location = locationService.getLocationByID(id); Location location = new
+	 * Location(); location.setId(id); locationService.deleteLocation(location);
+	 * List<Location> listLocation = locationService.getAllLocation();
+	 * resModMap.addAttribute("listLocation", listLocation); return
+	 * "displayAllLocations";
+	 */
+    
+    
+    @GetMapping("/updateLocationPage/{id}")
+    public String updateLocationPage(@PathVariable int id, ModelMap resModMap)
+    {
+    	Location editLocation = locationService.getLocationByID(id);
+    	resModMap.addAttribute("editLocation", editLocation);
+    	return "editLocation";
+    }
+    
+	
+	  @PutMapping("/updateLocationValues") 
+	  public String updateLocationValues(@ModelAttribute("location") Location location, ModelMap resModMap) 
+	  { 
+		  locationService.updateLocation(location); 
+		  List<Location> allLocations = locationService.getAllLocation();
+		  resModMap.addAttribute("allLocations", allLocations); return
+		  "displayAllLocations"; 
+	  }
+	 
+    
+	/*
+	 * @RequestMapping("/updateLocationValues") public String
+	 * updateLocationValues(@ModelAttribute("location") Location location, ModelMap
+	 * resModMap) { return null; }
+	 */
 }

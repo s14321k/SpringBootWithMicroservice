@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/CreateLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/jsps/CreateLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/jsps/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/jsps/displayAllLocations.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.activation-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.el-api-4.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.servlet-api-5.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentDAL/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/studentDAL/ReadMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +139,8 @@
       <workItem from="1686147614652" duration="1223000" />
       <workItem from="1686158067680" duration="119000" />
       <workItem from="1686158275049" duration="840000" />
+      <workItem from="1686162023548" duration="5871000" />
+      <workItem from="1686206865561" duration="8388000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -143,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686158572577</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Working. Pom.xml changed.&#10;WEB-INF changed.">
+      <created>1686162190633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686162190633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +172,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working in eclipse" />
     <MESSAGE value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
+    <MESSAGE value="Working. Pom.xml changed.&#10;WEB-INF changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working. Pom.xml changed.&#10;WEB-INF changed." />
   </component>
 </project>

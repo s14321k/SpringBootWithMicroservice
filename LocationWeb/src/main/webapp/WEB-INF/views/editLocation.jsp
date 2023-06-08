@@ -46,8 +46,12 @@
        	            }
        	        }
        	        //Fail the onsubmit to avoid page refresh.
-       	        return false; 
+       	        //return false; 
        	    }
+        	xhr.onerror = listAllPageCall()
+ 	        {
+ 	        	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
+ 	        };
         }
     
 		

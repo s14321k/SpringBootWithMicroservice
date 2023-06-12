@@ -1,5 +1,3 @@
---<ScriptOptions statementTerminator=";"/>
-
 CREATE TABLE studenttab_seq (
 	next_val BIGINT
 );
@@ -20,3 +18,8 @@ CREATE TABLE studenttab (
 	PRIMARY KEY (id)
 );
 
+use projectdb;
+
+select * from location;
+
+select type,count(type) from location group by type;

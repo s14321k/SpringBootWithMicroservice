@@ -23,21 +23,23 @@
 	       	let contextURL = 'http://localhost:8080/LocationWeb/LocCon/deleteLocation/';
 	       	let parmURL = contextURL + locId;
 	        var xhr = new XMLHttpRequest();
-	        xhr.open("DELETE", parmURL, true);
+	        xhr.open("DELETE", parmURL);
 	        xhr.send();
 	        xhr.onload = function() 
 	        {
-	            if (xhr.status != 200) 
-	            {
-	            	console.log('ERROR');
-	            }
+	            /* if (xhr.status != 200) 
+	            { */
+            	console.log('ERROR');
+            	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
+	            /* }
 	            else
 	            {
-	              listAllPageCall();
-	            }
+	              
+	            } */
             };
-	        xhr.onerror = listAllPageCall()
+	        xhr.onerror = function()
 	        {
+	        	console.log('ERROR');
 	        	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
 	        };
 	    }
@@ -69,7 +71,7 @@
       <td>${location.name}</td>
       <td>${location.type}</td>
        <td><a href="##" id="locIDDelete" onclick="return deleteRecord('${location.id}');">Delete</a></td>
-       <td><a href="##"  id="locIDupdate" onclick="return updateRecord('${location.id}');">Update</a></td>
+       <td><a href="##"  id="locIDupdate" onclick="return updateRecord('${location.id}');">Edit</a></td>
     </tr>
   </c:forEach>
 </table>

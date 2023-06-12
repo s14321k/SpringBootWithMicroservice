@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/util/ReportUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/util/ReportUtilImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/Report.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/Script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/Script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/repository/LocationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/repository/LocationRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/editLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/editLocation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,13 +53,13 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IntellijProjects/SpringBootWithMicroservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntellijProjects/SpringBootWithMicroservice/LocationWeb/src/main/webapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -72,7 +87,12 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LocationWebApplication">
+  <component name="RunManager" selected="Database Script.Script.sql">
+    <configuration name="Script.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/LocationWeb/Script.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="StudentDalApplicationTests.testCreateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="studentDAL" />
       <extension name="coverage">
@@ -111,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.Script.sql" />
         <item itemvalue="JUnit.StudentDalApplicationTests.testCreateStudent" />
         <item itemvalue="Spring Boot.StudentDalApplication" />
       </list>
@@ -130,7 +151,10 @@
       <workItem from="1686158067680" duration="119000" />
       <workItem from="1686158275049" duration="840000" />
       <workItem from="1686162023548" duration="5871000" />
-      <workItem from="1686206865561" duration="10164000" />
+      <workItem from="1686206865561" duration="10513000" />
+      <workItem from="1686299132223" duration="1013000" />
+      <workItem from="1686559389193" duration="10323000" />
+      <workItem from="1686588968327" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -160,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686254059297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Email configuratiion added in app.">
+      <created>1686260090605</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686260090605</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +202,7 @@
     <MESSAGE value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
     <MESSAGE value="Working. Pom.xml changed.&#10;WEB-INF changed." />
     <MESSAGE value="Updating the existing values from database using ajax." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating the existing values from database using ajax." />
+    <MESSAGE value="Email configuratiion added in app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Email configuratiion added in app." />
   </component>
 </project>

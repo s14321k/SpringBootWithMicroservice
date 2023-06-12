@@ -36,22 +36,23 @@
        		
    	   		//send the form data
    	        xhr.send(urlEncodedData);		//This acts a body message
-        	form.onsubmit = function(event)
-        	{
-       	        xhr.onreadystatechange = function() 
-       	        {
-       	            if (xhr.readyState == XMLHttpRequest.DONE) 
-       	            {
-       	                form.reset(); //reset form after AJAX success or do something else
-       	            }
-       	        }
-       	        //Fail the onsubmit to avoid page refresh.
-       	        //return false; 
-       	    }
-        	xhr.onerror = listAllPageCall()
- 	        {
- 	        	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
- 	        };
+	   	    xhr.onload = function() 
+		    {
+		            /* if (xhr.status != 200) 
+		            { */
+	       		console.log('ERROR');
+	         	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
+		            /* }
+		            else
+		            {
+		              
+		            } */
+	         };
+		     xhr.onerror = function()
+		     {
+		     	console.log('ERROR');
+		        window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
+		     };
         }
     
 		
@@ -103,6 +104,12 @@
 	        	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
 	        }; 
 	    } */
+	    
+	    
+	    function listAllRec()
+	    {
+	    	window.location = 'http://localhost:8080/LocationWeb/LocCon/listAllLocations';
+	    }
 
     </script>
 </head>
@@ -117,7 +124,7 @@
 </form>
 <input type="button" value="save" onclick="return updateRecord('updateTable');">
 
-<a href="listAllLocations"> View All </a>
+<a href="##" onclick = "return listAllRec();"> View All </a>
 
 </body>
 </html>

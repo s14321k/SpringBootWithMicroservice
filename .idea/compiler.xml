@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="studentDAL" />
         <module name="LocationWeb" />
+        <module name="FlightReservation" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FlightReservation" options="-parameters" />
       <module name="LocationWeb" options="-parameters" />
       <module name="studentDAL" options="-parameters" />
     </option>

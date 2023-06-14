@@ -16,8 +16,12 @@ import java.util.List;
 
 //	https://reflectoring.io/spring-cors/ CrossOrigin 
 //@CrossOrigin(maxAge = 3600)
+
+
 @Controller // -> This returns the CreateLocation.jsp page in return
 //@RestController -> This returns only the name CreateLocation in return
+
+
 @RequestMapping("LocCon")
 public class LocationController
 {
@@ -56,6 +60,7 @@ public class LocationController
     public String displayLocations(ModelMap resModMap)
     {
     	List<Location> listLocation = locationService.getAllLocation();
+    	generateReport();
         resModMap.addAttribute("listLocation", listLocation);
     	return "displayAllLocations";
     }
@@ -68,6 +73,7 @@ public class LocationController
         location.setId(id);
         locationService.deleteLocation(location);
         List<Location> allLocations = locationService.getAllLocation();
+        generateReport();
         resModMap.addAttribute("allLocations", allLocations);
         return "displayAllLocations";
     }
@@ -95,6 +101,7 @@ public class LocationController
 	public String updateLocationValues(@ModelAttribute("location") Location location, ModelMap resModMap) {
         locationService.updateLocation(location);
         List<Location> allLocations = locationService.getAllLocation();
+        generateReport();
         resModMap.addAttribute("allLocations", allLocations);
         return "displayAllLocations";
     }

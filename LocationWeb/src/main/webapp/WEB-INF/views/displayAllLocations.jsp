@@ -76,6 +76,8 @@
   </c:forEach>
 </table>
 
+<img src="${pageContext.request.contextPath}/pieChart.jpeg"/>
+
 <a href="ShowCreateJsp">Add Location </a>
 
 </body>

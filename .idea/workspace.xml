@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/util/ReportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/util/ReportUtilImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/Report.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/Script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/Script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/repository/LocationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/repository/LocationRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/editLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/editLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/pieChart.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/pieChart.jpeg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +147,8 @@
       <workItem from="1686206865561" duration="10513000" />
       <workItem from="1686299132223" duration="1013000" />
       <workItem from="1686559389193" duration="10323000" />
-      <workItem from="1686588968327" duration="3417000" />
+      <workItem from="1686588968327" duration="3712000" />
+      <workItem from="1686737311061" duration="2398000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -191,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686260090605</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="PieChart added.&#10;Get image from context root">
+      <created>1686596645692</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686596645692</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +204,7 @@
     <MESSAGE value="Working. Pom.xml changed.&#10;WEB-INF changed." />
     <MESSAGE value="Updating the existing values from database using ajax." />
     <MESSAGE value="Email configuratiion added in app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Email configuratiion added in app." />
+    <MESSAGE value="PieChart added.&#10;Get image from context root" />
+    <option name="LAST_COMMIT_MESSAGE" value="PieChart added.&#10;Get image from context root" />
   </component>
 </project>

@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 
 @Entity
-public class Reservation
+public class Reservation extends AbstractEntity
 {
     //private Long id;
     private Boolean checkedIn;

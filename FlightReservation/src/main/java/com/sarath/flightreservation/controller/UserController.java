@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.sarath.flightreservation.entities.User;
 import com.sarath.flightreservation.repos.UserRepo;
 
+import jakarta.validation.Valid;
+
 @Controller
 public class UserController 
 {
@@ -23,7 +25,7 @@ public class UserController
 	
 	//https://howtodoinjava.com/spring-mvc/controller-getmapping-postmapping/
 	@PostMapping("/registerUser")
-	public String register(@ModelAttribute("user") User user)
+	public String register(@ModelAttribute("user") @Valid User user)
 	{
 		userRepo.save(user);
 		return "login/login";

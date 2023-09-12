@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="Login page created.">
+      <change afterPath="$PROJECT_DIR$/studentDAL/Script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/FlightReservationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/FlightReservationApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/webapp/WEB-INF/jsps/login/registerUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/webapp/WEB-INF/jsps/login/registerUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/webapp/WEB-INF/jsps/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/resources/META-INF/resources/WEB-INF/jsps/registerAndLogin/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/webapp/WEB-INF/jsps/login/registerUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/resources/META-INF/resources/WEB-INF/jsps/registerAndLogin/registerUserPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/CreateLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/jsps/CreateLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/Report.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/jsps/Report.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/displayAllLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/jsps/displayAllLocations.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/editLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/jsps/editLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/webapp/pieChart.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/webapp/WEB-INF/views/pieChart.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,43 +64,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;e2698cbb-670f-45b1-83c9-d8c6ddafd9fb&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/EclipseCodings/flight-reservation-master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31724137&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;38e7d7f64d31ba1c5bfdb68f64195f69&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "e2698cbb-670f-45b1-83c9-d8c6ddafd9fb",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "E:/IntellijProjects/SpringBootWithMicroservice/FlightReservation/src/main/resources/META-INF/resources/WEB-INF/jsps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.31724137",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "38e7d7f64d31ba1c5bfdb68f64195f69",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;e2698cbb-670f-45b1-83c9-d8c6ddafd9fb&quot;
+    "RunConfigurationTargetLRU": [
+      "e2698cbb-670f-45b1-83c9-d8c6ddafd9fb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\FlightReservation\src\main\resources\META-INF\resources\WEB-INF\jsps" />
+      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\FlightReservation\src\main\resources\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IntellijProjects\SpringBootWithMicroservice\LocationWeb\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\LocationWeb\src\main\resources\META-INF\resources\WEB-INF\jsps" />
+      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\FlightReservation\src\main\resources\META-INF\resources\WEB-INF\jsps\registerAndLogin" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
@@ -105,10 +120,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Database Script.Script.sql">
+  <component name="RunManager" selected="Spring Boot.FlightReservationApplication">
     <configuration name="Script.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
       <script-file value="$PROJECT_DIR$/LocationWeb/Script.sql" />
       <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="FlightReservationApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/FlightReservationApplication.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="StudentDalApplicationTests.testCreateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -169,6 +187,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.FlightReservationApplication | #1" />
         <item itemvalue="Database Script.Script.sql" />
         <item itemvalue="JUnit.StudentDalApplicationTests.testCreateStudent" />
         <item itemvalue="Spring Boot.StudentDalApplication" />
@@ -202,6 +221,14 @@
       <workItem from="1686998234607" duration="420000" />
       <workItem from="1687084325737" duration="5636000" />
       <workItem from="1687103283472" duration="1619000" />
+      <workItem from="1687172781740" duration="1156000" />
+      <workItem from="1687256846973" duration="636000" />
+      <workItem from="1687354521043" duration="146000" />
+      <workItem from="1687364376459" duration="1788000" />
+      <workItem from="1687696120101" duration="2191000" />
+      <workItem from="1687754318038" duration="4121000" />
+      <workItem from="1687935559978" duration="5144000" />
+      <workItem from="1693663173937" duration="13050000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -310,5 +337,16 @@
     <MESSAGE value="LocationWeb ReadMe postman update.&#10;FlightResrvation entities added." />
     <MESSAGE value="Login page created." />
     <option name="LAST_COMMIT_MESSAGE" value="Login page created." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/UserController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

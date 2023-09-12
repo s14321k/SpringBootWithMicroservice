@@ -20,7 +20,7 @@ public class UserController
 	@GetMapping("/showRegPg")
 	public String showRegistrationPage()
 	{
-		return "login/registerUser";
+		return "registerUserPage";
 	}
 	
 	//https://howtodoinjava.com/spring-mvc/controller-getmapping-postmapping/

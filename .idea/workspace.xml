@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="Login page created.">
-      <change afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/FlightController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/ReservationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/db/Script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/FlightReservationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/FlightReservationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/repos/FlightRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/repos/FlightRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/repos/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/resources/META-INF/resources/WEB-INF/jsps/registerAndLogin/registerUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/resources/META-INF/resources/WEB-INF/jsps/registerAndLogin/registerUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/Script.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/java/com/sarath/location/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentDAL/Script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/studentDAL/src/main/resources/db/Script.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentDAL/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/studentDAL/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +188,7 @@
   <component name="SQLScriptSettings">
     <option name="matrix">
       <map>
-        <entry key="MYSQL.CreateComplete" value="CreateIfNotExists=1, UserGrants=1" />
+        <entry key="MYSQL.CreateComplete" value="CreateOrReplace=1, CreateIfNotExists=1, UserGrants=1" />
       </map>
     </option>
   </component>
@@ -259,7 +233,7 @@
       <workItem from="1701850205444" duration="11804000" />
       <workItem from="1702392913031" duration="687000" />
       <workItem from="1702444472266" duration="787000" />
-      <workItem from="1702833051727" duration="466000" />
+      <workItem from="1702833051727" duration="1947000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -338,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686895342506</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added  Angular  front  end">
+      <created>1702833624340</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702833624340</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +348,8 @@
     <MESSAGE value="Sql file added" />
     <MESSAGE value="LocationWeb ReadMe postman update.&#10;FlightResrvation entities added." />
     <MESSAGE value="Login page created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login page created." />
+    <MESSAGE value="Added  Angular  front  end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  Angular  front  end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

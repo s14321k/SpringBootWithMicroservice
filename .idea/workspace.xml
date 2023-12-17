@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="">
+    <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="Added  Angular  front  end">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +234,7 @@
       <workItem from="1701850205444" duration="11804000" />
       <workItem from="1702392913031" duration="687000" />
       <workItem from="1702444472266" duration="787000" />
-      <workItem from="1702833051727" duration="1947000" />
+      <workItem from="1702833051727" duration="2035000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702833624340</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added  Angular  front  end">
+      <created>1702835024293</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702835024293</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

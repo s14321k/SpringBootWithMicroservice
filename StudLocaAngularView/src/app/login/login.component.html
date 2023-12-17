@@ -1,0 +1,13 @@
+<!-- login.component.html-->
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    
+    <h2>{{ loginH2 }}</h2>
+
+    <app-auth-form></app-auth-form>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    <button (click)="goToRegister()">Register New User</button>
+
+  </form>
+</div>

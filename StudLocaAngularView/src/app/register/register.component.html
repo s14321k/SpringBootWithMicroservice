@@ -1,0 +1,18 @@
+<!-- register.component.html -->
+<div class="register-container">
+    <form [formGroup]="registerFromGroup" (ngSubmit)="onSubmit()">
+        <h2>Create an account</h2>
+
+        <app-name-form></app-name-form>
+
+        <app-auth-form></app-auth-form>
+
+        <div class="form-group">
+            <label for="confirmPas">Confirm Password</label>
+            <input type="password" id="confirmPas" formControlName="confirmPas" />
+        </div>
+
+        <button type="submit" [disabled]="registerFromGroup.invalid">Register</button>
+        <button (click)="goToLogin()">Login</button>
+    </form>
+</div>

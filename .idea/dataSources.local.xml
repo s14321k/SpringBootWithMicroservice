@@ -12,9 +12,9 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
+            <name qname="projectdb" />
             <name qname="reservation" />
             <name qname="@" />
-            <name qname="projectdb" />
             <name qname="university" />
           </node>
         </introspection-scope>

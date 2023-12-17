@@ -28,8 +28,8 @@ public class LocationController
 	@Autowired
     LocationService locationService;
 	
-	@Autowired
-	EmailUtil emailUtil;
+//	@Autowired
+//	EmailUtil emailUtil;
 
     @Autowired
     LocationRepo locationRepo;
@@ -52,7 +52,7 @@ public class LocationController
         Location saved = locationService.saveLocation(location);
         String msg = "Location saved with id : "+saved.getId();
         map.addAttribute("msg", msg);   // in CreateLocation.jsp ${msg}
-        emailUtil.sendMail("spring69boot@gmail.com", "Saved success", "Hi, welcome back again buddy");
+//        emailUtil.sendMail("spring69boot@gmail.com", "Saved success", "Hi, welcome back again buddy");
         return "CreateLocation";
     }
 

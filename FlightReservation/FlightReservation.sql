@@ -41,6 +41,22 @@ CREATE TABLE FLIGHT
 );
 
 
+-- create table flight
+-- (
+--     ID                       bigint unsigned auto_increment
+--         primary key,
+--     flight_number            varchar(255)                        null,
+--     operating_airlines       varchar(255)                        null,
+--     departure_city           varchar(255)                        null,
+--     arrival_city             varchar(255)                        null,
+--     date_of_departure        date                                null,
+--     ESTIMATED_DEPARTURE_TIME timestamp default CURRENT_TIMESTAMP null,
+--     estimate_departure_time  datetime(6)                         null,
+--     constraint ID
+--         unique (ID)
+-- );
+
+
 /* This is for forign key and reference https://www.tutorialspoint.com/how-to-get-the-datatype-of-mysql-table-columns */
 select data_type from information_schema.columns where table_schema = 'RESERVATION' and table_name = 'FLIGHT';
 DESCRIBE PASSENGER;

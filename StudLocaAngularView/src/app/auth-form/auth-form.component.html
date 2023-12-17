@@ -1,0 +1,10 @@
+<div>
+    <div class="form-group" [class.focused]="isEmailFieldFocused || email?.value">
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email" (focus)="isEmailFieldFocused = true" (blur)="isEmailFieldFocused = false" placeholder=" " />
+    </div>
+    <div class="form-group" [class.focused]="isPasswordFieldFocused || password?.value">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" (focus)="isPasswordFieldFocused = true" (blur)="isPasswordFieldFocused = false" placeholder=" " />
+    </div>
+</div>

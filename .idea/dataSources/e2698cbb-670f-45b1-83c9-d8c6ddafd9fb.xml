@@ -1194,7 +1194,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>1</Position>
     </column>
     <column id="331" parent="305" name="ID">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>204</AutoIncrement>
       <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1216,7 +1216,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>5</Position>
     </column>
     <column id="336" parent="305" name="date_of_departure">
-      <DasType>datetime(6)|0s</DasType>
+      <DasType>date|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="337" parent="305" name="ESTIMATED_DEPARTURE_TIME">

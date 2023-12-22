@@ -23,7 +23,7 @@ public class FlightController {
     @GetMapping("/findFlight")
     public ResponseEntity<?> findFlight(@RequestParam(value = "from") String departure,
                                         @RequestParam(value = "to") String arrival,
-                                        @RequestParam(value = "departureDate") @DateTimeFormat(pattern = "MM-dd-yyyy") Date departureDate) {
+                                        @RequestParam(value = "departureDate") @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss.SSSSSS") Date departureDate) {
 
         List<Flight> flightList = flightRepo.findFlights(departure, arrival, departureDate);
         return new ResponseEntity<>(flightList, HttpStatus.OK);

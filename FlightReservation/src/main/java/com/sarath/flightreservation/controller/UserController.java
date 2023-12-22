@@ -33,7 +33,7 @@ public class UserController
 	@PostMapping("/registerUser")
 	public String register(@RequestBody User user)
 	{
-		System.out.println("User.get "+user.getPassword());
+		System.out.println("User.get " + user.getPassword());
 		User saved = userRepo.save(user);
 		return saved.getEmail();
 	}

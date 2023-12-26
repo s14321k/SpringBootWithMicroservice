@@ -1,7 +1,7 @@
 package com.flightCheckin.integration;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -34,9 +34,16 @@ public class ReservationRestClientImpl implements ReservationRestClient
 	}
 
 	@Override
-	public Reservation updateReservation(ReservationUpdateRequest resUpdate)
+	public ResponseEntity<?> updateReservation(ReservationUpdateRequest resUpdate)
 	{
-		return restClient.post().uri("/reserve-Control/updateReservation").contentType(MediaType.APPLICATION_JSON).body(resUpdate).retrieve().body(Reservation.class);
+		// https://github.com/spring-projects/spring-framework/blob/699f93fed71f7bfd73d94188dce6b849c92927cc/framework-docs/modules/ROOT/pages/integration/rest-clients.adoc
+		ResponseEntity<Reservation> res = restClient.post()
+				.uri("/reserve-Control/updateReservation")
+				.contentType(MediaType.APPLICATION_JSON)
+				.body(resUpdate)
+				.retrieve()
+				.toEntity(Reservation.class);
+		return res;
 	}
 
 }

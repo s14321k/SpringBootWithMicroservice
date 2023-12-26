@@ -40,12 +40,9 @@ public class CheckInController
 	}
 	
 	@PutMapping("/completeCheckIn")
-	public ResponseEntity<?> completeCheckIn(@RequestBody Map<String, Object> resrvationUpdateReq)
+	public ResponseEntity<?> completeCheckIn(@RequestBody ReservationUpdateRequest resrvationUpdateReq)
 	{
-		ReservationUpdateRequest resUpdtReq = new ReservationUpdateRequest();
-		BeanUtils.copyProperties(resUpdtReq, resrvationUpdateReq);
-		resUpdtReq.setCheckIn(true);
-		reservationRestClient.updateReservation(resUpdtReq);
-		return new ResponseEntity<>(resUpdtReq, HttpStatus.OK);
+		resrvationUpdateReq.setCheckIn(true);
+		return new ResponseEntity<>(reservationRestClient.updateReservation(resrvationUpdateReq), HttpStatus.OK);
 	}
 }

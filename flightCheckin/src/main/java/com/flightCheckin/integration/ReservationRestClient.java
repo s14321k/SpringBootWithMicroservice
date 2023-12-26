@@ -1,5 +1,7 @@
 package com.flightCheckin.integration;
 
+import org.springframework.http.ResponseEntity;
+
 import com.flightCheckin.integration.dto.Reservation;
 import com.flightCheckin.integration.dto.ReservationUpdateRequest;
 
@@ -7,5 +9,5 @@ public interface ReservationRestClient
 {
 	public Reservation findReservation(Long id);
 	
-	public Reservation updateReservation(ReservationUpdateRequest resUpdate);
+	public ResponseEntity<?> updateReservation(ReservationUpdateRequest resUpdate);
 }

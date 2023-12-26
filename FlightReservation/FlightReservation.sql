@@ -109,39 +109,39 @@ create table IF NOT EXISTS reservation.reservation
         foreign key (FLIGHT_ID) references reservation.flight (ID)
 );
 
-create index IF NOT EXISTS FLIGHT_ID
-    on reservation.reservation (FLIGHT_ID);
-
-create index IF NOT EXISTS PASSENGER_ID
-    on reservation.reservation (PASSENGER_ID);
-    
-create index IF NOT EXISTS role_id
-    on reservation.user_role (role_id);
-
-create index user_id
-    on reservation.user_role (user_id);
-    
-create table IF NOT EXISTS reservation.passenger_seq
-(
-    next_val bigint null
-);
-
-create table IF NOT EXISTS reservation.user_seq
-(
-    next_val bigint null
-);
-
-create table IF NOT EXISTS reservation.reservation_seq
-(
-    next_val bigint null
-);
-
-create table IF NOT EXISTS reservation.passenger_seq
-(
-    next_val bigint null
-);
-
-create table IF NOT EXISTS reservation.flight_seq
-(
-    next_val bigint null
-);
+--create index IF NOT EXISTS FLIGHT_ID
+--    on reservation.reservation (FLIGHT_ID);
+--
+--create index IF NOT EXISTS PASSENGER_ID
+--    on reservation.reservation (PASSENGER_ID);
+--    
+--create index IF NOT EXISTS role_id
+--    on reservation.user_role (role_id);
+--
+--create index user_id
+--    on reservation.user_role (user_id);
+--    
+--create table IF NOT EXISTS reservation.passenger_seq
+--(
+--    next_val bigint null
+--);
+--
+--create table IF NOT EXISTS reservation.user_seq
+--(
+--    next_val bigint null
+--);
+--
+--create table IF NOT EXISTS reservation.reservation_seq
+--(
+--    next_val bigint null
+--);
+--
+--create table IF NOT EXISTS reservation.passenger_seq
+--(
+--    next_val bigint null
+--);
+--
+--create table IF NOT EXISTS reservation.flight_seq
+--(
+--    next_val bigint null
+--);

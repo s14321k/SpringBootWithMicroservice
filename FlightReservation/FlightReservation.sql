@@ -14,6 +14,14 @@ create table IF NOT EXISTS reservation.user
     password   varchar(255) null
 );
 
+select * from reservation.user;
+
+INSERT INTO reservation.user (id, email, first_name, last_name, password)
+VALUES
+    (1, 'sarath@69.com', 'sarath', 'kumar', 'sarath69'),
+    (2, 'user2@example.com', 'Jane', 'Smith', 'securepass456'),
+    (3, 'user3@example.com', 'Bob', 'Johnson', 'letmein789');
+
 create table IF NOT EXISTS reservation.role
 (
     ID   int auto_increment
@@ -25,12 +33,17 @@ create table IF NOT EXISTS reservation.user_role
 (
     role_id int    null,
     user_id bigint not null,
-    constraint user_role_ibfk_1
-        foreign key (user_id) references reservation.user (id),
-    constraint user_role_ibfk_2
-        foreign key (role_id) references reservation.role (ID)
+    constraint user_role_ibfk_1 foreign key (user_id) references reservation.user (id),
+    constraint user_role_ibfk_2 foreign key (role_id) references reservation.role (ID)
 );
 
+insert into reservation.role values(1,'ADMIN')
+
+select * from reservation.role;
+
+insert into reservation.user_role values(1,1)
+
+select * from reservation.user_role
 
 create table IF NOT EXISTS reservation.flight
 (

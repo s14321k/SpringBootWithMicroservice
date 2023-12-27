@@ -29,7 +29,7 @@ public class FlightController {
         return new ResponseEntity<>(flightList, HttpStatus.OK);
     }
 
-    @PostMapping("/save-flights")
+    @PostMapping("/add-flights")
     public ResponseEntity<?> saveFlight(@RequestBody List<Flight> flight)
     {
         try

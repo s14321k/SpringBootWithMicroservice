@@ -10,6 +10,8 @@ import com.sarath.flightreservation.entities.Reservation;
 import com.sarath.flightreservation.repos.FlightRepo;
 import com.sarath.flightreservation.repos.PassengerRepo;
 import com.sarath.flightreservation.repos.ReservationRepo;
+import com.sarath.flightreservation.util.EmailUtil;
+import com.sarath.flightreservation.util.PDFGenerator;
 
 @Service
 public class ReservationServiceImpl implements ReservationService
@@ -22,6 +24,12 @@ public class ReservationServiceImpl implements ReservationService
 	
 	@Autowired
 	ReservationRepo reservationRepo;
+	
+	@Autowired
+	PDFGenerator pdfGen;
+	
+	@Autowired
+	EmailUtil email;
 
 	@Override
 	public Reservation bookFlight(ReservationRequest reservationRequest) 
@@ -42,9 +50,13 @@ public class ReservationServiceImpl implements ReservationService
 		reservation.setPassenger(savedPassenger);
 		reservation.setCheckedIn(false);
 		
-		Reservation saveReservation = reservationRepo.save(reservation);
+		Reservation savedReservation = reservationRepo.save(reservation);
 		
-		return saveReservation;
+		String path = pdfGen.generatateItinary(savedReservation, savedReservation.getId());
+		
+		email.sendMail("silvershinesarath@gmail.com", path);
+		
+		return savedReservation;
 	}
 	
 }

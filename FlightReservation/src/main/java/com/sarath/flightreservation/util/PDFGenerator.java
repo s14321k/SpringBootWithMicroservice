@@ -2,6 +2,12 @@ package com.sarath.flightreservation.util;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.springframework.stereotype.Component;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -11,14 +17,42 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.sarath.flightreservation.entities.Reservation;
 
+@Component
 public class PDFGenerator 
 {
-	public void generatateItinary(Reservation reservation, String filePath)
+	public String generatateItinary(Reservation reservation, Long id)
 	{
+		String folderName = "reservtionPDF"+id;
+		
+		String folderPath = "D:/";
+		
+		String fullPath = folderPath + folderName;
+		
+		Path path = Paths.get(fullPath);
+		
+		if(!Files.exists(path))
+		{
+			try
+			{
+				Files.createDirectories(path);
+				System.out.println("Folder created \n :P :P :P ))))))))))))))))))))) \n EEEEEEEEEEEEEEEEEEE \n Folder created   ---------->");
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		else
+		{
+			System.out.println("Folder already exists");
+		}
+		
 		Document doc = new Document();
+		
+		String pdfPath = fullPath+"/reservation"+id+".pdf";
 		try 
 		{
-			PdfWriter.getInstance(doc, new FileOutputStream(filePath));
+			PdfWriter.getInstance(doc, new FileOutputStream(pdfPath));
 			doc.open();
 			doc.add(generateTable(reservation));
 			doc.close();
@@ -27,6 +61,8 @@ public class PDFGenerator
 		{
 			e.printStackTrace();
 		}
+		
+		return pdfPath;
 	}
 
 	private PdfPTable generateTable(Reservation reservation) 

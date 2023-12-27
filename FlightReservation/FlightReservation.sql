@@ -37,13 +37,13 @@ create table IF NOT EXISTS reservation.user_role
     constraint user_role_ibfk_2 foreign key (role_id) references reservation.role (ID)
 );
 
-insert into reservation.role values(1,'ADMIN')
+insert into reservation.role values(1,'ADMIN');
 
 select * from reservation.role;
 
-insert into reservation.user_role values(1,1)
+insert into reservation.user_role values(1,1);
 
-select * from reservation.user_role
+select * from reservation.user_role;
 
 create table IF NOT EXISTS reservation.flight
 (
@@ -121,6 +121,45 @@ create table IF NOT EXISTS reservation.reservation
     constraint reservation_ibfk_2
         foreign key (FLIGHT_ID) references reservation.flight (ID)
 );
+
+
+CREATE DATABASE IF NOT EXISTS PROJECTDB;
+
+create table IF NOT EXISTS projectdb.location
+(
+    id   int          not null
+        primary key,
+    code varchar(255) null,
+    name varchar(255) null,
+    type varchar(255) null
+);
+
+create table IF NOT EXISTS projectdb.document
+(
+	id BIGINT NOT NULL,
+	name VARCHAR(100) NOT NULL,
+	data BLOB NOT NULL,
+	PRIMARY KEY (id)
+);
+
+
+CREATE DATABASE IF NOT EXISTS PROJECTDB;
+
+create table IF NOT EXISTS projectdb.studenttab
+(
+    id      bigint       not null
+        primary key,
+    scourse varchar(255) null,
+    sfee    double       null,
+    sname   varchar(255) null
+);
+
+--create table IF NOT EXISTS projectdb.studenttab_seq
+--(
+--    next_val bigint null
+--);
+
+
 
 --create index IF NOT EXISTS FLIGHT_ID
 --    on reservation.reservation (FLIGHT_ID);

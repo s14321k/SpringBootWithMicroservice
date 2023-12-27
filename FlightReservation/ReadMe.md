@@ -21,3 +21,18 @@ https://www.javaguides.net/2018/10/user-registration-module-using-springboot-spr
 
 # WebSecurityConfigurerAdaptor 
 * [is depricated in spring 3.0](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter/)
+
+# Jar cmds
+* Right click the project 
+ -> Run as -> Maven clean
+ -> Run as -> Maven Install
+ Now check target folder, now you can see flightReservation.jar. Refresh if you cant see
+ 
+We can use this jar file to run in any server using the cmd -> java -jar flightreservation.jar
+
+# War
+- Change jar to war in pom.xml
+- in @SpringBootApplication class extend it with SpringBootServletInitializer.
+
+# StreamingResponseBody for file streaming
+* [LINK](https://stackoverflow.com/q/51845228)

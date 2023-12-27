@@ -13,6 +13,8 @@ import com.sarath.flightreservation.repos.ReservationRepo;
 import com.sarath.flightreservation.util.EmailUtil;
 import com.sarath.flightreservation.util.PDFGenerator;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class ReservationServiceImpl implements ReservationService
 {
@@ -32,6 +34,7 @@ public class ReservationServiceImpl implements ReservationService
 	EmailUtil email;
 
 	@Override
+	@Transactional
 	public Reservation bookFlight(ReservationRequest reservationRequest) 
 	{
 //		reservationRequest.getCardNumber()

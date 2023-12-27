@@ -17,14 +17,9 @@ public class WebSecurityConfig	//WebSecurityConfigurerAdaptor is depricated in s
 		return (web) -> web.ignoring().requestMatchers("/registerUser", "/", "loginAuthenticate", "/add-flights", "/**");
 	}
 	
-	
-	
 	/*
 	 * public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws
 	 * Exception { httpSecurity .authorizeHttpRequests((authz) -> authz.anyRequest()
 	 * .authenticated() ) .httpBasic(withDefaults()); }
 	 */
-
-	
-	
 }

@@ -1,36 +1,43 @@
 package com.flightCheckin.integration;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
+import com.flightCheckin.feignClient.ReservationFeignClients;
 import com.flightCheckin.integration.dto.Reservation;
 import com.flightCheckin.integration.dto.ReservationUpdateRequest;
 
-import lombok.extern.slf4j.Slf4j;
-
 @Service
-@Slf4j
 public class ReservationRestClientImpl implements ReservationRestClient
 {
 	
 	// Rest client introduced in 3.2
 	// https://howtodoinjava.com/spring/spring-restclient/
+	@Value("${com.flightReservation.url}")
+	private String BASE_URL;
 	
 	private RestClient restClient;
+	
+	private ReservationFeignClients reservationFeignClients;
 	
 	public ReservationRestClientImpl()
 	{
 		restClient = RestClient.builder()
-							   .baseUrl("http://localhost:8082/SarathFlight")
+							   .baseUrl(BASE_URL)
 							   .build();
 	}
 	
 	@Override
-	public Reservation findReservation(Long id)
+	public ResponseEntity<?> findReservation(Long id)
 	{
-		return restClient.get().uri("/reserve-Control/reservations/"+id).retrieve().body(Reservation.class);
+		ResponseEntity<Reservation> resResp = (ResponseEntity<Reservation>) reservationFeignClients.findReservation(id).getBody();
+		
+		
+//		return restClient.get().uri("/reserve-Control/reservations/"+id).retrieve().body(Reservation.class);
+		return resResp;
 	}
 
 	@Override

@@ -7,7 +7,7 @@ import com.flightCheckin.integration.dto.ReservationUpdateRequest;
 
 public interface ReservationRestClient
 {
-	public Reservation findReservation(Long id);
+	public ResponseEntity<?> findReservation(Long id);
 	
 	public ResponseEntity<?> updateReservation(ReservationUpdateRequest resUpdate);
 }

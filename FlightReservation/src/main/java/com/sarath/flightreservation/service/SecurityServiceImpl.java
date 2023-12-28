@@ -15,7 +15,7 @@ public class SecurityServiceImpl implements SecurityService
 	@Autowired
 	UserDetailsService userDetailsService;
 	
-	@Autowired
+	
 	AuthenticationManager authenticationManager;
 
 	@Override

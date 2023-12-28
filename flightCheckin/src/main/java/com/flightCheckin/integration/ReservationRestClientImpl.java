@@ -1,5 +1,6 @@
 package com.flightCheckin.integration;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,30 +15,36 @@ import com.flightCheckin.integration.dto.ReservationUpdateRequest;
 public class ReservationRestClientImpl implements ReservationRestClient
 {
 	
-	// Rest client introduced in 3.2
-	// https://howtodoinjava.com/spring/spring-restclient/
-	@Value("${com.flightReservation.url}")
-	private String BASE_URL;
+	@Autowired
+	private ReservationFeignClients reservationFeignClients;
 	
 	private RestClient restClient;
 	
-	private ReservationFeignClients reservationFeignClients;
+	@Value("${com.flightCheckin.flightReservation.url}")
+	private String BASE_URL;
 	
+	
+	/*
+	 * RestClient introduced in 3.2
+	 * https://howtodoinjava.com/spring/spring-restclient/
+	 */		
 	public ReservationRestClientImpl()
 	{
+		
 		restClient = RestClient.builder()
 							   .baseUrl(BASE_URL)
 							   .build();
 	}
 	
 	@Override
-	public ResponseEntity<?> findReservation(Long id)
+	public Object findReservation(Long id)
 	{
-		ResponseEntity<Reservation> resResp = (ResponseEntity<Reservation>) reservationFeignClients.findReservation(id).getBody();
+		//-----Using FeignClient-------------//
+		Object resp = reservationFeignClients.findReservation(id).getBody();
+		return resp;
 		
-		
-//		return restClient.get().uri("/reserve-Control/reservations/"+id).retrieve().body(Reservation.class);
-		return resResp;
+		//------Using RestClient------------//
+		//return restClient.get().uri("/reserve-Control/reservations/"+id).retrieve().body(Object.class);
 	}
 
 	@Override
@@ -45,7 +52,7 @@ public class ReservationRestClientImpl implements ReservationRestClient
 	{
 		// https://github.com/spring-projects/spring-framework/blob/699f93fed71f7bfd73d94188dce6b849c92927cc/framework-docs/modules/ROOT/pages/integration/rest-clients.adoc
 		ResponseEntity<Reservation> res = restClient.post()
-				.uri("/reserve-Control/updateReservation")
+				.uri(BASE_URL+"/reserve-Control/updateReservation")
 				.contentType(MediaType.APPLICATION_JSON)
 				.body(resUpdate)
 				.retrieve()

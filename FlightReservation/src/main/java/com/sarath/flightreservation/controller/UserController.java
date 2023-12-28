@@ -27,7 +27,7 @@ public class UserController
 {
 	private static Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 	
-	@Autowired
+	
 	private BCryptPasswordEncoder passwordEncoder;
 	
 	@Autowired

@@ -6,7 +6,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 
 @Configuration
-@EnableWebSecurity
+//@EnableWebSecurity
 public class WebSecurityConfig	//WebSecurityConfigurerAdaptor is depricated in spring 3.0 
 {
 	//https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter/

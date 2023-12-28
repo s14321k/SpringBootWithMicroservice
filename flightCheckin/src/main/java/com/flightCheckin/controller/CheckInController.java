@@ -33,7 +33,7 @@ public class CheckInController
 	public ResponseEntity<?> startCheckIn(@RequestParam("reservationId") Long id)
 	{
 		Reservation reserv = new Reservation();
-		Object res = reservationRestClient.findReservation(id).getBody();
+		Object res = reservationRestClient.findReservation(id);
 		BeanUtils.copyProperties(res, reserv);
 		return new ResponseEntity<>(res, HttpStatus.OK); // forword to Display Reservation details page
 	}

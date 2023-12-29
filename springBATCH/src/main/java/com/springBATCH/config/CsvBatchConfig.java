@@ -1,7 +1,10 @@
 package com.springBATCH.config;
 
+import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+import org.springframework.batch.core.repository.JobRepository;
+import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
@@ -13,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.transaction.PlatformTransactionManager;
 
 import com.springBATCH.entity.Customer;
 import com.springBATCH.repo.CustomerRepo;
@@ -76,6 +80,15 @@ public class CsvBatchConfig
 	/*
 	 * @Bean public Tasklet myTasklet() { return new MyTasklet(); }
 	 */
+	
+	public Step myStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager)
+	{
+		return new StepBuilder("step-1", jobRepository).<Customer, Customer>chunk(10, platformTransactionManager)
+														.reader(customerReader())
+														.listener(customerProcessor())
+														.writer(customerWriter())
+														.build();
+	}
 	
 	
 	// Create Job

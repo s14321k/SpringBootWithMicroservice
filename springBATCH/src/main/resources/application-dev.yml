@@ -1,0 +1,13 @@
+spring:
+ datasource:
+  driver-class-name: org.postgresql.Driver
+  password: Reset@123
+  url: jdbc:postgresql://172.16.1.112:5432/postgres
+  username: postgres
+  hikari:
+   maximum-pool-size: 20
+ jpa:
+  hibernate:
+   ddl-auto: update
+  show-sql: true
+com.message: dev application.yml

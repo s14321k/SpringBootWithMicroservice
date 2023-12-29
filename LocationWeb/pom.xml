@@ -72,9 +72,6 @@
 		    <version>1.0.13</version>
 		</dependency>
 
-        
-        
-        
         <dependency>
 		    <groupId>org.glassfish.web</groupId>
 		    <artifactId>jakarta.servlet.jsp.jstl</artifactId>

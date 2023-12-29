@@ -1,12 +1,11 @@
 spring:
- datasource:
-  driver-class-name: org.postgresql.Driver
-  password: sarath69kumar
-  url: jdbc:postgresql://localhost:5432/postgres
-  username: postgres
-  hikari:
-   maximum-pool-size: 20
- jpa:
-  hibernate:
-   ddl-auto: update
-  show-sql: true
+  profiles: # Check PropConfig.java
+    # active: local,dev # modify here to switch between environments. Always second value will be taken first
+    active: dev # Commet this line and uncomment above line to have two active profiles.
+    include: application-${spring.profiles.active}.yml
+    
+server:
+ port: 8086
+ 
+# application file Profiling is bad way
+com.message: Default application.yml

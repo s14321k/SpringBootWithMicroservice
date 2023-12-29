@@ -1,22 +1,30 @@
 package com.springBATCH.config;
 
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+import org.springframework.batch.core.step.tasklet.Tasklet;
+import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 
 import com.springBATCH.entity.Customer;
+import com.springBATCH.repo.CustomerRepo;
 
 @Configuration
 @EnableBatchProcessing
 public class CsvBatchConfig 
 {
-	// Create Reader -> Acts as item reader
+	@Autowired
+	private CustomerRepo customRep;
+	
+// Create Reader -> Acts as item reader
 	@Bean
 	public FlatFileItemReader<Customer> customerReader()
 	{
@@ -45,9 +53,31 @@ public class CsvBatchConfig
  		return lineMapper;
 	}
 	
-	// Create Processor
-	// Create Writer
-	// Create Step
+// Create Processor
+	@Bean
+	public CustomerProcessor customerProcessor()
+	{
+		return new CustomerProcessor();
+	}
+	
+// Create Writer
+	@Bean
+	public RepositoryItemWriter<Customer> customerWriter()
+	{
+		RepositoryItemWriter<Customer> repItemWriter = new RepositoryItemWriter<>();
+		repItemWriter.setRepository(customRep);
+		repItemWriter.setMethodName("save");
+		return repItemWriter;
+	}
+	
+	
+// Create Step
+	//https://stackoverflow.com/questions/40041334/difference-between-step-tasklet-and-chunk-in-spring-batch
+	/*
+	 * @Bean public Tasklet myTasklet() { return new MyTasklet(); }
+	 */
+	
+	
 	// Create Job
 
 }

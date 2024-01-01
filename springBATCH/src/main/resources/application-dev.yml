@@ -10,4 +10,7 @@ spring:
   hibernate:
    ddl-auto: update
   show-sql: true
+ batch: # Disable Auto-Run of Jobs on the Application Startup
+  job:
+   enabled: false
 com.message: dev application.yml

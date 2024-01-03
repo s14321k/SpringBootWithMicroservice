@@ -83,6 +83,18 @@ ALTER COLUMN contact TYPE INTEGER USING contact::INTEGER;
 ALTER TABLE batch.customers_info
 ALTER COLUMN contact TYPE character varying USING contact::character varying;
 
+
+SELECT * FROM addr_batch.address; 
+
+	
+ALTER TABLE addr_batch.address
+    ALTER COLUMN column3 TYPE character varying(100) COLLATE pg_catalog."default";
+	
+ALTER TABLE IF EXISTS addr_batch.address
+    ADD COLUMN IF NOT EXISTS column20 character varying(100);
+
+
+
 -- Sql Alter
 ALTER TABLE batch.customers_info
 MODIFY contact INTEGER;

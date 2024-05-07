@@ -40,7 +40,7 @@ public class ReservationRestClientImpl implements ReservationRestClient
 	public Object findReservation(Long id)
 	{
 		//-----Using FeignClient-------------//
-		Object resp = reservationFeignClients.findReservation(id).getBody();
+		Object resp = reservationFeignClients.findReservationFeignInterface(id).getBody();
 		return resp;
 		
 		//------Using RestClient------------//

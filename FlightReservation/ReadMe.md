@@ -36,3 +36,6 @@ We can use this jar file to run in any server using the cmd -> java -jar flightr
 
 # StreamingResponseBody for file streaming
 * [LINK](https://stackoverflow.com/q/51845228)
+
+## @EnableEurekaClient is not needed
+- https://github.com/spring-cloud/spring-cloud-netflix/issues/4022

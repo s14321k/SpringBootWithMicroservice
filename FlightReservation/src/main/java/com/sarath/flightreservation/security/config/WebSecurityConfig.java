@@ -14,7 +14,7 @@ public class WebSecurityConfig	//WebSecurityConfigurerAdaptor is depricated in s
 	@Bean
 	public WebSecurityCustomizer webSecurityCustomizer()
 	{
-		return (web) -> web.ignoring().requestMatchers("/registerUser", "/", "loginAuthenticate", "/add-flights", "/**");
+		return (web) -> web.ignoring().requestMatchers("/registerUser", "/", "loginAuthenticate", "/add-flights", "/*/**", "/SarathFlight/**");
 	}
 	
 	/*

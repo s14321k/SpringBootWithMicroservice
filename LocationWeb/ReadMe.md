@@ -25,10 +25,10 @@ netstat -a -o -n
 
 taskkill /F /PID <PID of 8080>
 
+# APPLICATION FAILED TO START
 
-#
-***************************
-APPLICATION FAILED TO START
+
+ APPLICATION FAILED TO START
 ***************************
 
 Description:
@@ -44,16 +44,15 @@ Consider the following:
     If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
     If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-````
+```
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
     <scope>provided</scope>
 </dependency>
-````        
+``` 
 
-
-### Facing jsp page creation in intellij
+## Facing jsp page creation in intellij
 || https://stackoverflow.com/a/75861228
 
 

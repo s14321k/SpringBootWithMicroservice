@@ -11,10 +11,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 //@FeignClient(url = "${com.flightCheckin.flightReservation.url}", value = "reservation-feign-client", path = "/reserve-Control")
 
 // This type is to access the other service throug the eureka service.
-@FeignClient(value = "FLIGHT-RESERVATION/SarathFlight", path = "/reserve-Control")
+//@FeignClient(value = "flight-reservation/SarathFlight", path = "/reserve-Control")
+
+//public interface ReservationFeignClients 
+//{
+//	@GetMapping("/reservations/{id}")
+//    public ResponseEntity<?> findReservationFeignInterface(@PathVariable Long id);
+//}
+
+// To rout through the api gateway
+@FeignClient(value = "api-gateway")
 public interface ReservationFeignClients 
 {
-	@GetMapping("/reservations/{id}")
+	@GetMapping("/flight-reservation/SarathFlight/reserve-Control/reservations/{id}")
     public ResponseEntity<?> findReservationFeignInterface(@PathVariable Long id);
 
 }

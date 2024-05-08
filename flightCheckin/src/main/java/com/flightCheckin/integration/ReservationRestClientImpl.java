@@ -11,6 +11,8 @@ import com.flightCheckin.feignClient.ReservationFeignClients;
 import com.flightCheckin.integration.dto.Reservation;
 import com.flightCheckin.integration.dto.ReservationUpdateRequest;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @Service
 public class ReservationRestClientImpl implements ReservationRestClient
 {
@@ -36,7 +38,9 @@ public class ReservationRestClientImpl implements ReservationRestClient
 							   .build();
 	}
 	
+	// "flightReservationService" should be same as in the resilience properties
 	@Override
+	@CircuitBreaker(name = "flightReservationService", fallbackMethod = "fallbackGetReservationById")
 	public Object findReservation(Long id)
 	{
 		//-----Using FeignClient-------------//

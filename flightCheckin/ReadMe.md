@@ -8,3 +8,9 @@
 
 ## @EnableEurekaClient is not needed
 - https://github.com/spring-cloud/spring-cloud-netflix/issues/4022
+
+
+## Resilience4j dependency
+- https://www.baeldung.com/spring-boot-resilience4j
+
+## [GateWay](https://spring.io/projects/spring-cloud-gateway#overview)

@@ -67,5 +67,10 @@ public class ProjectSecurityConfig {
 			.addScript(JdbcDaoImpl.DEFAULT_USER_SCHEMA_DDL_LOCATION)
 			.build();
 	}
+	
+	@Bean
+	public InMemoryUserDetailsManager userDetailsService() {
+		return null;
+	}
 
 }

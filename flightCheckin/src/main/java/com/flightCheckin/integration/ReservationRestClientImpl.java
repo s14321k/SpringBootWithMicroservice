@@ -1,5 +1,7 @@
 package com.flightCheckin.integration;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
@@ -16,6 +18,9 @@ import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 @Service
 public class ReservationRestClientImpl implements ReservationRestClient
 {
+	
+	Logger log = LoggerFactory.getLogger(ReservationRestClientImpl.class);
+	long count = 0;
 	
 	@Autowired
 	private ReservationFeignClients reservationFeignClients;
@@ -45,10 +50,19 @@ public class ReservationRestClientImpl implements ReservationRestClient
 	{
 		//-----Using FeignClient-------------//
 		Object resp = reservationFeignClients.findReservationFeignInterface(id).getBody();
+		log.info("count"+count);
+		count++;
 		return resp;
 		
 		//------Using RestClient------------//
 		//return restClient.get().uri("/reserve-Control/reservations/"+id).retrieve().body(Object.class);
+	}
+	
+	public Object fallbackGetReservationById(Long id, Throwable e) {
+		log.error("Error = "+ e);
+		Reservation res = new Reservation();
+		res.setId(id);
+		return res;
 	}
 
 	@Override

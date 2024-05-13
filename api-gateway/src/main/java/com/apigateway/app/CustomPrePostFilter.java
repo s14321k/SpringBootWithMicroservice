@@ -18,6 +18,7 @@ public class CustomPrePostFilter implements GlobalFilter {
 	
 	
 	// This is to run only the pre filter. To do post filter we need to add .then() as shown in bellow filter method
+
 //	@Override
 //	public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 //		ServerHttpRequest req = exchange.getRequest();

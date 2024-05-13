@@ -3,8 +3,6 @@ package com.flightCheckin.integration.dto;
 import lombok.*;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Reservation
 {
 	private Long id;

@@ -20,12 +20,12 @@ public class CorsConfiguration {
           public void addCorsMappings(CorsRegistry registry) {            
              
              registry.addMapping("/**")
-                   .allowedMethods(GET,PUT,POST,DELETE)
-                   .allowedHeaders("*")
-                   .allowedOriginPatterns("*")
-                   .allowCredentials(true);
+				.allowedOrigins("http://localhost:8989/")
+				.allowedMethods(GET,PUT,POST,DELETE)
+				.allowedHeaders("*")
+				.allowedOriginPatterns("*")
+				.allowCredentials(true);
           }
        };
     }
-
 }

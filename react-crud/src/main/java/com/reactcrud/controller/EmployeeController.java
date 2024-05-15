@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 @RequestMapping("/emp")
 @AllArgsConstructor
-@CrossOrigin("*")
+//@CrossOrigin()
 public class EmployeeController {
 
 	EmployeeService empService;

@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "employees")
 public class Employee {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
 	
 	@NotNull(message = "First Name Should not be empty")

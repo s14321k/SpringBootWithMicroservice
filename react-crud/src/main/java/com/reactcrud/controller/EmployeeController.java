@@ -52,12 +52,21 @@ public class EmployeeController {
 	
 	@PutMapping("/update")
 	public ResponseEntity<?> updateEmployee(@RequestBody Employee updEmp) {
+//		Long id = updEmp.getId();
+//		Employee emp = empRepo.findById(id)
+//							.orElseThrow(() -> new ResourceNotFoundException("Resource not foud " +id));
+//		BeanUtils.copyProperties(updEmp, emp);
+//		return new ResponseEntity<>(empRepo.save(emp), HttpStatus.CREATED);
+
 		Long id = updEmp.getId();
-		Employee emp = empRepo.findById(id)
-							.orElseThrow(() -> new ResourceNotFoundException("Resource not foud " +id));
-		BeanUtils.copyProperties(updEmp, emp);
-		empRepo.save(emp);
-		return new ResponseEntity<>(empService.createEmployee(emp), HttpStatus.CREATED);
+		Employee emp = empRepo.findById(id).map(user -> {
+			user.setFirstName(updEmp.getFirstName());
+			user.setLastName(updEmp.getLastName());
+			user.setEmail(updEmp.getEmail());
+			return empRepo.save(user);
+		}).orElse(empRepo.save(updEmp));//.orElseThrow(() -> new ResourceNotFoundException("User not found with id "+ id));
+		return ResponseEntity.ok(emp);
+		
 	}
 	
 	@DeleteMapping("/{id}")

@@ -32,3 +32,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## [Download NVM For Win](https://github.com/coreybutler/nvm-windows)
+### [NVM GIT](https://github.com/nvm-sh/nvm?tab=readme-ov-file)
+- Check NVM version - `nvm -v`
+- install node using nvm - `nvm install node`
+- specific node install - `nvm install 20`
+- list installed nodes - `nvm list`
+- use specific node - `nvm use 20`
+- check node version - `node -v`
+- check remote verions - `nvm ls-remote`

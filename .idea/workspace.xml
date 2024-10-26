@@ -4,189 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="Added  Angular  front  end">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="34a847ae-ae01-4f7c-aa7a-593fb54572f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocationWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoHacker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoHacker/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flightCheckin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/react-crud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springBATCH/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springBATCH/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studentDAL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentDAL/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/SpringBootBookSellerMavenApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/SpringBootBookSellerMavenApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal$UserPrincipalBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal$UserPrincipalBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="d2b39dda-4c9a-412e-9ff2-d21c7803fc79" />
-        <option name="url" value="git@github.com:/s14321k/SpringBootWithMicroservice.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2QsaL83Zq6DcqK38YOV7y4jonQ3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2nxug4gHjsYereLm9pqbvTJT7Sv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JPA.DatabaseSchemaImportDialog": "e2698cbb-670f-45b1-83c9-d8c6ddafd9fb",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/Java/Spring/SpringBootWithMicroservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31724137",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "7c783de7022d68dfb171e751a9e7b5a9",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql"
-    ],
-    "RunConfigurationTargetLRU": [
-      "e2698cbb-670f-45b1-83c9-d8c6ddafd9fb"
-    ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\FlightReservation\src\main\resources\META-INF\resources\WEB-INF\jsps" />
-      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\FlightReservation\src\main\resources\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Java\Spring\SpringBootWithMicroservice\LocationWeb\src\main\resources\META-INF\resources\WEB-INF\db" />
-      <recent name="E:\Java\Spring\SpringBootWithMicroservice\studentDAL\src\main\resources\db" />
-      <recent name="E:\Java\Spring\SpringBootWithMicroservice\LocationWeb\src\main\resources\db" />
-      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\LocationWeb\src\main\webapp\WEB-INF\views" />
-      <recent name="E:\IntellijProjects\SpringBootWithMicroservice\LocationWeb\src\main\resources\META-INF\resources\WEB-INF\jsps" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.FlightReservationApplication">
-    <configuration name="Script.sql (1)" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/LocationWeb/src/main/resources/META-INF/resources/WEB-INF/db/Script.sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
-    </configuration>
-    <configuration name="Script.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
-      <script-file value="$PROJECT_DIR$/LocationWeb/Script.sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
-    </configuration>
-    <configuration name="FlightReservationApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/FlightReservationApplication.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="StudentDalApplicationTests.testCreateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="studentDAL" />
+  <component name="RunManager">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.apigateway.app.ApiGatewayApplication" />
+      <module name="api-gateway" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sarath.studentdal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sarath.studentdal" />
-      <option name="MAIN_CLASS_NAME" value="com.sarath.studentdal.StudentDalApplicationTests" />
-      <option name="METHOD_NAME" value="testCreateStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="studentDAL" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="studentDAL" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FlightReservationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="FlightReservation" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sarath.flightreservation.FlightReservationApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="LocationWeb" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sarath.location.LocationWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="studentDAL" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sarath.studentdal.StudentDalApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sarath.studentdal.*" />
+          <option name="PATTERN" value="com.apigateway.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,202 +78,23 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.Script.sql (1)" />
-        <item itemvalue="HTTP Request.FlightReservationApplication | #1" />
-        <item itemvalue="Database Script.Script.sql" />
-        <item itemvalue="JUnit.StudentDalApplicationTests.testCreateStudent" />
-        <item itemvalue="Spring Boot.StudentDalApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SQLScriptSettings">
-    <option name="matrix">
-      <map>
-        <entry key="MYSQL.CreateComplete" value="CreateOrReplace=1, CreateIfNotExists=1, UserGrants=1" />
-      </map>
-    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="" />
-      <created>1686144683765</created>
+      <changelist id="34a847ae-ae01-4f7c-aa7a-593fb54572f2" name="Changes" comment="" />
+      <created>1729927176475</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686144683765</updated>
-      <workItem from="1686144684771" duration="2020000" />
-      <workItem from="1686147488426" duration="97000" />
-      <workItem from="1686147614652" duration="1223000" />
-      <workItem from="1686158067680" duration="119000" />
-      <workItem from="1686158275049" duration="840000" />
-      <workItem from="1686162023548" duration="5871000" />
-      <workItem from="1686206865561" duration="10513000" />
-      <workItem from="1686299132223" duration="1013000" />
-      <workItem from="1686559389193" duration="10323000" />
-      <workItem from="1686588968327" duration="3712000" />
-      <workItem from="1686737311061" duration="4362000" />
-      <workItem from="1686755629702" duration="7730000" />
-      <workItem from="1686765162651" duration="3321000" />
-      <workItem from="1686810310512" duration="1025000" />
-      <workItem from="1686847066377" duration="2569000" />
-      <workItem from="1686894234275" duration="4721000" />
-      <workItem from="1686998234607" duration="420000" />
-      <workItem from="1687084325737" duration="5636000" />
-      <workItem from="1687103283472" duration="1619000" />
-      <workItem from="1687172781740" duration="1156000" />
-      <workItem from="1687256846973" duration="636000" />
-      <workItem from="1687354521043" duration="146000" />
-      <workItem from="1687364376459" duration="1788000" />
-      <workItem from="1687696120101" duration="2191000" />
-      <workItem from="1687754318038" duration="4121000" />
-      <workItem from="1687935559978" duration="5144000" />
-      <workItem from="1693663173937" duration="13050000" />
-      <workItem from="1701274611005" duration="5592000" />
-      <workItem from="1701321714872" duration="22138000" />
-      <workItem from="1701676482870" duration="4981000" />
-      <workItem from="1701850205444" duration="11804000" />
-      <workItem from="1702392913031" duration="687000" />
-      <workItem from="1702444472266" duration="787000" />
-      <workItem from="1702833051727" duration="2035000" />
-      <workItem from="1729918957836" duration="639000" />
+      <updated>1729927176475</updated>
+      <workItem from="1729927177486" duration="551000" />
     </task>
-    <task id="LOCAL-00001" summary="working in eclipse">
-      <created>1686147832266</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1686147832266</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations">
-      <created>1686158572577</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1686158572577</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Working. Pom.xml changed.&#10;WEB-INF changed.">
-      <created>1686162190633</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686162190633</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updating the existing values from database using ajax.">
-      <created>1686254059296</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1686254059297</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Email configuratiion added in app.">
-      <created>1686260090605</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686260090605</updated>
-    </task>
-    <task id="LOCAL-00006" summary="PieChart added.&#10;Get image from context root">
-      <created>1686596645692</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686596645692</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Rest Controller added additionaly">
-      <created>1686752580223</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1686752580223</updated>
-    </task>
-    <task id="LOCAL-00008" summary="FlightReservation Moodule added">
-      <created>1686755901528</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1686755901528</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Sql file added">
-      <created>1686759392114</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1686759392114</updated>
-    </task>
-    <task id="LOCAL-00010" summary="LocationWeb ReadMe postman update.&#10;FlightResrvation entities added.">
-      <created>1686766276194</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1686766276194</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Login page created.">
-      <created>1686895342506</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1686895342506</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added  Angular  front  end">
-      <created>1702833624340</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1702833624340</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added  Angular  front  end">
-      <created>1702835024293</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1702835024293</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="working in eclipse" />
-    <MESSAGE value="Facing issue in LocationWeb.&#10;http://localhost:8080/LocationWeb/LocCon/listAllLocations" />
-    <MESSAGE value="Working. Pom.xml changed.&#10;WEB-INF changed." />
-    <MESSAGE value="Updating the existing values from database using ajax." />
-    <MESSAGE value="Email configuratiion added in app." />
-    <MESSAGE value="PieChart added.&#10;Get image from context root" />
-    <MESSAGE value="Rest Controller added additionaly" />
-    <MESSAGE value="FlightReservation Moodule added" />
-    <MESSAGE value="Sql file added" />
-    <MESSAGE value="LocationWeb ReadMe postman update.&#10;FlightResrvation entities added." />
-    <MESSAGE value="Login page created." />
-    <MESSAGE value="Added  Angular  front  end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  Angular  front  end" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/FlightController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/controller/FlightController.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

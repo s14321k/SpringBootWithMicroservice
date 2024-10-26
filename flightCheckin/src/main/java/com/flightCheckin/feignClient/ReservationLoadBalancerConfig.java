@@ -6,6 +6,10 @@ import org.springframework.context.annotation.Bean;
 
 import feign.Feign;
 
+/**
+ * spring.application.name=flight-reservation from FlightReservation
+ */
+
 @LoadBalancerClient(value = "FLIGHT-RESERVATION")
 public class ReservationLoadBalancerConfig {
 	

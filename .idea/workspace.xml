@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="292a4aa1-9f10-479c-acf6-87f071df0c06" name="Changes" comment="Added  Angular  front  end">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/FlightReservation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocationWeb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LocationWeb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoHacker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoHacker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flightCheckin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-crud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/react-crud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springBATCH/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springBATCH/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studentDAL/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studentDAL/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -54,6 +71,7 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -235,6 +253,7 @@
       <workItem from="1702392913031" duration="687000" />
       <workItem from="1702444472266" duration="787000" />
       <workItem from="1702833051727" duration="2035000" />
+      <workItem from="1729918957836" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="working in eclipse">
       <created>1686147832266</created>

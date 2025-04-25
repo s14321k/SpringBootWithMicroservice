@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34a847ae-ae01-4f7c-aa7a-593fb54572f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e2698cbb-670f-45b1-83c9-d8c6ddafd9fb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/SpringBootBookSellerMavenApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/SpringBootBookSellerMavenApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/model/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal$UserPrincipalBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal$UserPrincipalBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-book-seller/bin/src/main/java/com/sha/springbootbooksellermaven/security/UserPrincipal.class" afterDir="false" />
-    </list>
+    <list default="true" id="34a847ae-ae01-4f7c-aa7a-593fb54572f2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,30 +17,31 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2nxug4gHjsYereLm9pqbvTJT7Sv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.apigateway.app.ApiGatewayApplication" />
@@ -91,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729927176475</updated>
       <workItem from="1729927177486" duration="551000" />
+      <workItem from="1745558320004" duration="762000" />
     </task>
     <servers />
   </component>

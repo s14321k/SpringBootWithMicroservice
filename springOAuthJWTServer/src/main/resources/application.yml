@@ -1,0 +1,52 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: springOAuthJWTServer
+
+  # ===============================================
+  # =           H2 Database Configuration          =
+  # ===============================================
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:file:./data/springOAuthServer
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: sa  
+      
+
+        # ===============================================
+        # =           JPA / Hibernate Settings           =
+        # ===============================================
+
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop   # Options: none | validate | update | create | create-drop - Use update in prod environment
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+  # ===============================================
+  # =               Logging Settings               =
+  # ===============================================
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: trace # Do not use in prod
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG        # Show SQL queries
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # Show SQL parameters
+
+
+jwt:
+  rsa-private-key: classpath:certs/privateKey.pem
+  rsa-public-key: classpath:certs/publicKey.pem

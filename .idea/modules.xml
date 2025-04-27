@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FlightReservation/FlightReservation.iml" filepath="$PROJECT_DIR$/FlightReservation/FlightReservation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LocationWeb/LocationWeb.iml" filepath="$PROJECT_DIR$/LocationWeb/LocationWeb.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demoHacker/demoHacker.iml" filepath="$PROJECT_DIR$/demoHacker/demoHacker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka_server/eureka_server.iml" filepath="$PROJECT_DIR$/eureka_server/eureka_server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/flightCheckin/flightCheckin.iml" filepath="$PROJECT_DIR$/flightCheckin/flightCheckin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/react-crud/react-crud.iml" filepath="$PROJECT_DIR$/react-crud/react-crud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-book-seller/spring-boot-book-seller.iml" filepath="$PROJECT_DIR$/spring-boot-book-seller/spring-boot-book-seller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springBATCH/springBATCH.iml" filepath="$PROJECT_DIR$/springBATCH/springBATCH.iml" />
-      <module fileurl="file://$PROJECT_DIR$/studentDAL/studentDAL.iml" filepath="$PROJECT_DIR$/studentDAL/studentDAL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootWithMicroservice.iml" filepath="$PROJECT_DIR$/SpringBootWithMicroservice.iml" />
     </modules>
   </component>
 </project>

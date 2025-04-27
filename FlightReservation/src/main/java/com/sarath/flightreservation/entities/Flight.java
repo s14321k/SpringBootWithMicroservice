@@ -1,12 +1,15 @@
 package com.sarath.flightreservation.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
-import lombok.*;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.sql.Timestamp;
 import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 
 @EqualsAndHashCode(callSuper = true)

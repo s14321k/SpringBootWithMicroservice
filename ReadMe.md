@@ -1,6 +1,9 @@
 ## Basics To Know
-
 - Updating pom.xml, give run as Maven clean, then Maven install and then Run as spring boot application.
+
+### Add all the project to intellij as spring boot
+- Right click on pom.xml on each project and select add to maven module
+- For gradle, something similar to that.
 
 ## 404, whitelable issue
 
@@ -10,6 +13,7 @@ https://stackoverflow.com/a/53603984/11962586
 
 ## Dependencies
 
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-validation</artifactId>
@@ -42,6 +46,7 @@ https://stackoverflow.com/a/53603984/11962586
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jdbc</artifactId>
 </dependency>
+```
 
 ## Database properties
 

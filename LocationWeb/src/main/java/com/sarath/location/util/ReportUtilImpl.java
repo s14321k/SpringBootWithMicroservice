@@ -1,16 +1,15 @@
 package com.sarath.location.util;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.general.DefaultPieDataset;
 import org.springframework.stereotype.Component;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
 
 @Component
 public class ReportUtilImpl implements ReportUtil

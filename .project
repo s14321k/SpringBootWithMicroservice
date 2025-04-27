@@ -3,7 +3,13 @@
 	<name>SpringBootWithMicroservice</name>
 	<comment></comment>
 	<projects>
-	</projects>
+		<project>api-gateway</project>
+		<project>eureka_server</project>
+		<project>flightCheckin</project>
+		<project>FlightReservation</project>
+		<project>LocationWeb</project>
+		<project>springOAuthJWTServer</project>
+  </projects>
 	<buildSpec>
 	</buildSpec>
 	<natures>

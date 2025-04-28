@@ -1,7 +1,41 @@
 ## Basics To Know
 - Updating pom.xml, give run as Maven clean, then Maven install and then Run as spring boot application.
 
-### Add all the project to intellij as spring boot
+## intellij Settings
+
+---
+### intellij Debug enable
+
+#### ✅ What you should do to get changes reflected in debug mode:
+
+1. **Enable "Build project automatically"**:
+    - **File > Settings > Build, Execution, Deployment > Compiler**
+    - ✅ Check **Build project automatically**.
+
+2. **Enable "HotSwap" when debugging**:
+    - **File > Settings > Build, Execution, Deployment > Debugger > HotSwap**
+    - Set it to **"Always reload classes"** (instead of "Ask" or "Never").
+
+3. **(IMPORTANT)**: When you change Java files:
+    - Save the file (`Ctrl+S` / `Cmd+S`).
+    - Press **Ctrl+F9** (`Build Project`) to compile changes.
+    - IntelliJ should **HotSwap** the modified classes automatically into the running debug session.
+
+4. **If HotSwap doesn't happen automatically**:
+    - In Debug mode, click on this icon in the toolbar: 🔄 (Reload Changed Classes).
+
+---
+
+**Still not reflecting?**
+
+
+```properties
+spring.devtools.restart.enabled=false
+```
+
+
+---
+### To Add all the project to intellij as spring boot
 - Right click on pom.xml on each project and select add to maven module
 - For gradle, something similar to that.
 

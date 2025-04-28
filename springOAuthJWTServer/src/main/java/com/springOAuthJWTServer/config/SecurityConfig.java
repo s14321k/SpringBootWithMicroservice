@@ -1,5 +1,7 @@
 package com.springOAuthJWTServer.config;
 
+import com.springOAuthJWTServer.config.jwtAuth.JwtTokenUtils;
+import com.springOAuthJWTServer.config.jwtConfig.JwtAccessTokenFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -18,6 +20,7 @@ import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
 import org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationEntryPoint;
 import org.springframework.security.oauth2.server.resource.web.access.BearerTokenAccessDeniedHandler;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.nimbusds.jose.jwk.JWK;
@@ -45,8 +48,10 @@ public class SecurityConfig {
 	private final UserInfoManagerConfig userManagerConfig;
 	
 	private final RSAKeyRecord rsaKeyRecord;
+
+	private final JwtTokenUtils jwtTokenUtils;
 	
-	@Order(2)
+	@Order(1)
     @Bean
     public SecurityFilterChain signInSecurityFilterChain(HttpSecurity httpSecurity) throws Exception{
 		log.info("[SecurityConfig.signInSecurityFilterChain - Order(1)]");
@@ -64,7 +69,7 @@ public class SecurityConfig {
                 .build();
     }
 	
-	@Order(1)
+	@Order(2)
 	@Bean
 	public SecurityFilterChain apiSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
 		log.info("[SecurityConfig.apiSecurityFilterChain - Order(2)]");
@@ -75,7 +80,8 @@ public class SecurityConfig {
 //				.userDetailsService(userManagerConfig)	// To add the below methods for JWT bearer token
 				.oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()))
 	            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-	            .exceptionHandling(ex -> {
+				.addFilterBefore(new JwtAccessTokenFilter(rsaKeyRecord, jwtTokenUtils), UsernamePasswordAuthenticationFilter.class)
+				.exceptionHandling(ex -> {
 	                 log.error("[SecurityConfig:apiSecurityFilterChain] Exception due to :{}",ex);
 	                 ex.authenticationEntryPoint(new BearerTokenAuthenticationEntryPoint());
 	                 ex.accessDeniedHandler(new BearerTokenAccessDeniedHandler());

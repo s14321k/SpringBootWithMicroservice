@@ -48,30 +48,48 @@
             <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        
-        <!-- Webclient dependency -->
-        <!-- <dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-webflux</artifactId>
-		</dependency> -->
+
+
+
+
+<!-- DB configurations -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- H2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
         
         <!-- https://youtube.com/playlist?list=PL9sWWgDDTZObh7SLxelrEg_R8E_0lB11g&si=cwNgekNWqeCFFhiR -->
         <!-- https://www.youtube.com/@devproblems -->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation -->
-		<!-- <dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-validation</artifactId>
-		    <version>3.2.1</version>
-		</dependency> -->
-		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
-            <optional>true</optional>
+<!--            <optional>true</optional>-->
         </dependency>
-        
-        <!-- spring-cloud-starter-openfeign -->
+
+
+<!-- Webclient dependency -->
+		<!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency> -->
+
+<!-- spring-cloud-starter-openfeign -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
 		<!-- https://spring.io/projects/spring-cloud -->
 		<dependency>
@@ -88,7 +106,7 @@
 	    </dependency>
 	    
 	    
-	    <!-- resilience4j -->
+<!-- resilience4j -->
 	    <dependency>
 		    <groupId>io.github.resilience4j</groupId>
 		    <artifactId>resilience4j-spring-boot3</artifactId>
@@ -98,19 +116,19 @@
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-		
+
+<!-- actuator -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId> 
 		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		
-		<!-- Swagger -->
+<!-- Swagger -->
 		<dependency>
 		 	<groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
          	<version>2.2.0</version>
         </dependency>
-
 	</dependencies>
 	
 	<!-- Add this for versioning management of cloud dependencies -->

@@ -10,7 +10,6 @@ import com.sarath.flightreservation.repos.UserRepo;
 
 public class UserDetailsServiceImpl implements UserDetailsService 
 {
-	@Autowired
 	UserRepo userRepo;
 
 	@Override

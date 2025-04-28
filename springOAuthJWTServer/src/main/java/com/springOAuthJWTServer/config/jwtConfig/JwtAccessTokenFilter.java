@@ -3,16 +3,21 @@ package com.springOAuthJWTServer.config.jwtConfig;
 import java.io.IOException;
 
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtValidationException;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.web.server.ResponseStatusException;
 
-import com.nimbusds.jose.proc.SecurityContext;
 import com.springOAuthJWTServer.config.RSAKeyRecord;
+import com.springOAuthJWTServer.config.jwtAuth.JwtTokenUtils;
 import com.springOAuthJWTServer.dto.TokenType;
 
 import jakarta.servlet.FilterChain;
@@ -55,12 +60,25 @@ public class JwtAccessTokenFilter extends OncePerRequestFilter{
 				
 				UserDetails userDetails = jwtTokenUtils.userDetails(userName);
 				if(jwtTokenUtils.isTokenValid(jwtToken,userDetails)) {
-					SecurityContext securityContext = (SecurityContext) SecurityContextHolder.createEmptyContext();
+					SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
+					
+					UsernamePasswordAuthenticationToken createdToken = new UsernamePasswordAuthenticationToken(
+							userDetails, 
+							null, 
+							userDetails.getAuthorities()
+							);
+					createdToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+					securityContext.setAuthentication(createdToken);
+					SecurityContextHolder.setContext(securityContext);
 				}
 			}
-		} 
-		catch (JwtValidationException jwtValidationException) {
+			log.info("[JwtAccessTokenFilter:doFilterInternal] Completed");
 			
+			filterChain.doFilter(request, response);
+		}
+		catch (JwtValidationException jwtValidationException) {
+			log.error("[JwtAccessTokenFilter:doFilterInternal] Exception due to :{}",jwtValidationException.getMessage());
+            throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE,jwtValidationException.getMessage());
 		}
 		
 	}

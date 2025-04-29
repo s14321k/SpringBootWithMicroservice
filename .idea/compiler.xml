@@ -23,6 +23,15 @@
         </processorPath>
         <module name="springOAuthJWTServer.main" />
       </profile>
+      <profile name="Annotation profile for AAMicroAccounts" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="accounts" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Hackerank" target="21" />
@@ -33,6 +42,7 @@
       <module name="FlightReservation" options="-parameters" />
       <module name="Hackerank" options="-parameters" />
       <module name="LocationWeb" options="-parameters" />
+      <module name="accounts" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="demoHaker" options="-parameters" />
       <module name="eureka_server" options="-parameters" />

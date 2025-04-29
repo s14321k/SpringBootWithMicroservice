@@ -3,6 +3,14 @@
 
 ## intellij Settings
 
+### Shortcuts
+
+- Run as spring boot application: Ctrl+Shift+F10
+- See the inherited members: Ctrl+F12
+- See the overridden members: Ctrl+Shift+F12
+- See the usages: Ctrl+F7
+
+
 ---
 ### intellij Debug enable
 

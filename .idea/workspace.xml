@@ -5,18 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e378834-7826-4b4e-ba70-af7d3c5a8f6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flightCheckin/src/main/java/com/flightCheckin/controller/AccountsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springOAuthJWTServer/src/main/java/com/springOAuthJWTServer/config/jwtAuth/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/constants/AccountsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/AccountsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/AccountsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/AccountsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/CustomerRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/IAccountsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/src/main/java/com/sarath/flightreservation/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AAMicroAccounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/controller/accountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/controller/AccountsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flightCheckin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flightCheckin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flightCheckin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/src/main/resources/applicationnn.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springOAuthJWTServer/src/main/java/com/springOAuthJWTServer/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springOAuthJWTServer/src/main/java/com/springOAuthJWTServer/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springOAuthJWTServer/src/main/java/com/springOAuthJWTServer/config/jwtConfig/JwtAccessTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springOAuthJWTServer/src/main/java/com/springOAuthJWTServer/config/jwtConfig/JwtAccessTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springOAuthJWTServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springOAuthJWTServer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="69272245-91df-417a-b530-6324382248e7" name="DemoHacker" comment="get demoHacker back using revert" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +65,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -124,7 +135,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FlightCheckinApplication">
+  <component name="RunManager" selected="Spring Boot.AaMicroAccountsApplication">
     <configuration name="ApplicationTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoHaker" />
       <extension name="coverage">
@@ -199,6 +210,13 @@
       <option name="MAIN_CLASS_NAME" value="com.hackerrank.ApplicationTests" />
       <option name="METHOD_NAME" value="testCreatedWithValidData" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AaMicroAccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="accounts" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.accounts.AaMicroAccountsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,7 +303,7 @@
       <workItem from="1745769401515" duration="2850000" />
       <workItem from="1745772277044" duration="2234000" />
       <workItem from="1745776475273" duration="1332000" />
-      <workItem from="1745779315572" duration="6250000" />
+      <workItem from="1745779315572" duration="15297000" />
     </task>
     <task id="LOCAL-00001" summary="1. remove unwanted imprts&#10;2. Intellij all app module service&#10;3. Revert demoHacker project">
       <created>1745754679611</created>
@@ -301,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745754891015</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creating new app in flightCheckin for microservice, Docker, Kebernetis">
+      <created>1745826005962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745826005962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +347,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1. remove unwanted imprts&#10;2. Intellij all app module service&#10;3. Revert demoHacker project" />
     <MESSAGE value="1. Revert in local and add demoHacker project" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Revert in local and add demoHacker project" />
+    <MESSAGE value="Creating new app in flightCheckin for microservice, Docker, Kebernetis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating new app in flightCheckin for microservice, Docker, Kebernetis" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

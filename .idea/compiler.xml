@@ -23,17 +23,9 @@
         </processorPath>
         <module name="springOAuthJWTServer.main" />
       </profile>
-      <profile name="Annotation profile for AAMicroAccounts" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="accounts" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="accounts" target="21" />
       <module name="Hackerank" target="21" />
     </bytecodeTargetLevel>
   </component>

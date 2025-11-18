@@ -1,5 +1,9 @@
 package com.flightCheckin.integration;
 
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
+import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +49,11 @@ public class ReservationRestClientImpl implements ReservationRestClient
 	
 	// "flightReservationService" should be same as in the resilience properties
 	@Override
+	@Retry(name = "flightReservationService")
 	@CircuitBreaker(name = "flightReservationService", fallbackMethod = "fallbackGetReservationById")
+	@RateLimiter(name = "flightReservationService")
+	@TimeLimiter(name = "flightReservationService")
+	@Bulkhead(name = "flightReservationService", type = Bulkhead.Type.SEMAPHORE)
 	public Object findReservation(Long id)
 	{
 		//-----Using FeignClient-------------//

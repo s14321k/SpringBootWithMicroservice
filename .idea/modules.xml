@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringBootWithMicroservice.iml" filepath="$PROJECT_DIR$/SpringBootWithMicroservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springOAuthJWTServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/springOAuthJWTServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springOAuthJWTServer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/springOAuthJWTServer.test.iml" />
     </modules>
   </component>
 </project>

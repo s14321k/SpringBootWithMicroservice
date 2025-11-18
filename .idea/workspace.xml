@@ -4,29 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e378834-7826-4b4e-ba70-af7d3c5a8f6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/constants/AccountsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/AccountsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/AccountsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/AccountsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/CustomerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/IAccountsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
+    <list default="true" id="1e378834-7826-4b4e-ba70-af7d3c5a8f6b" name="Changes" comment="removed from flight checkin and created new app.&#10;course - 19&#10;https://photon.udemy.com/course/master-microservices-with-spring-docker-kubernetes/">
+      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/springOAuthJWTServer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AAMicroAccounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/controller/accountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/ReadMe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/AaMicroAccountsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/constants/AccountsConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/controller/AccountsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/AccountsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/CustomerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ErrorResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/dto/ResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/entity/Accounts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/entity/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/AccountsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/mapper/CustomerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/AccountsRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/repo/CustomerRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/IAccountsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/java/com/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AAMicroAccounts/src/test/java/com/accounts/AaMicroAccountsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlightReservation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlightReservation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flightCheckin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flightCheckin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flightCheckin/src/main/java/com/flightCheckin/integration/ReservationRestClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/flightCheckin/src/main/java/com/flightCheckin/integration/ReservationRestClientImpl.java" afterDir="false" />
     </list>
     <list id="69272245-91df-417a-b530-6324382248e7" name="DemoHacker" comment="get demoHacker back using revert" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,17 +127,17 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
-    "last_opened_file_path": "D:/Intell",
+    "last_opened_file_path": "D:/Git/SpringBootWithMicroservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.deploy.options",
-    "spring.configuration.checksum": "0c337b159eb0e82297f68bca52f15d83",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "32d24c86344321f50c9063605cbfdefc",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.1.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -127,6 +149,11 @@
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\SpringBootWithMicroservice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -303,7 +330,29 @@
       <workItem from="1745769401515" duration="2850000" />
       <workItem from="1745772277044" duration="2234000" />
       <workItem from="1745776475273" duration="1332000" />
-      <workItem from="1745779315572" duration="15297000" />
+      <workItem from="1745779315572" duration="15483000" />
+      <workItem from="1745995563758" duration="3742000" />
+      <workItem from="1746077178522" duration="1651000" />
+      <workItem from="1746187218155" duration="835000" />
+      <workItem from="1746860078945" duration="1929000" />
+      <workItem from="1746959787561" duration="2155000" />
+      <workItem from="1746973662689" duration="1213000" />
+      <workItem from="1748754856300" duration="593000" />
+      <workItem from="1750253459642" duration="1553000" />
+      <workItem from="1757307168563" duration="1933000" />
+      <workItem from="1757798083449" duration="2984000" />
+      <workItem from="1757828571655" duration="138000" />
+      <workItem from="1757828756641" duration="480000" />
+      <workItem from="1757829258428" duration="1932000" />
+      <workItem from="1757834509132" duration="673000" />
+      <workItem from="1757863139794" duration="7000" />
+      <workItem from="1757863201722" duration="7000" />
+      <workItem from="1757863227221" duration="91000" />
+      <workItem from="1757864099651" duration="104000" />
+      <workItem from="1757864490093" duration="513000" />
+      <workItem from="1757865020644" duration="519000" />
+      <workItem from="1757865564408" duration="960000" />
+      <workItem from="1758015009953" duration="2263000" />
     </task>
     <task id="LOCAL-00001" summary="1. remove unwanted imprts&#10;2. Intellij all app module service&#10;3. Revert demoHacker project">
       <created>1745754679611</created>
@@ -326,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745826005962</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed from flight checkin and created new app.&#10;course - 19&#10;https://photon.udemy.com/course/master-microservices-with-spring-docker-kubernetes/">
+      <created>1745913251828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745913251828</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +404,8 @@
     <MESSAGE value="1. remove unwanted imprts&#10;2. Intellij all app module service&#10;3. Revert demoHacker project" />
     <MESSAGE value="1. Revert in local and add demoHacker project" />
     <MESSAGE value="Creating new app in flightCheckin for microservice, Docker, Kebernetis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating new app in flightCheckin for microservice, Docker, Kebernetis" />
+    <MESSAGE value="removed from flight checkin and created new app.&#10;course - 19&#10;https://photon.udemy.com/course/master-microservices-with-spring-docker-kubernetes/" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed from flight checkin and created new app.&#10;course - 19&#10;https://photon.udemy.com/course/master-microservices-with-spring-docker-kubernetes/" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

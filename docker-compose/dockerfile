@@ -1,0 +1,12 @@
+FROM openjdk:21-jdk-slim
+MAINTAINER sarath
+WORKDIR /app
+
+COPY Acounts/build/libs/Acounts-0.0.1-SNAPSHOT.jar .
+COPY Cards/build/libs/Cards-0.0.1-SNAPSHOT.jar .
+COPY Loans/build/libs/Loans-0.0.1-SNAPSHOT.jar .
+
+COPY start.sh .
+RUN chmod +x start.sh
+
+ENTRYPOINT ["./start.sh"]

@@ -1,0 +1,113 @@
+services:
+    rabbitmq:
+        image: rabbitmq:4-management
+        container_name: rabbitmq-ms
+        hostname: rabbitmq
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+        healthcheck:
+            test: "rabbitmq-diagnostics -q ping" # rabbitmq-diagnostics check_port_connectivity
+            interval: 30s
+            timeout: 5s
+            retries: 3
+            start_period: 10s
+        networks:
+            - s14321k
+
+
+    configserver:
+        image: "s14321k/configserver:d1"
+        container_name: configserver-ms
+        ports:
+            - "8888:8888"
+        depends_on:
+            rabbitmq:
+                condition: service_healthy
+        healthcheck:
+            test: CMD-SHELL curl --fail --silent localhost:8888/actuator/health/readiness | grep UP || exit 1
+            interval: 30s
+            timeout: 5s
+            retries: 3
+            start_period: 10s
+        extends:
+            file: common-config.yml
+            service: microservice-base-config
+        deploy:
+            resources:
+                limits:
+#                    cpus: "0.1"
+                    memory: 500M
+        networks:
+            - s14321k
+
+
+    Acounts:
+        build: .
+        image: "s14321k/acounts:d1"
+        container_name: Acounts-ms
+        ports:
+            - "8080:8080"
+        depends_on:
+            configserver:
+                condition: service_healthy # service_completed_successfully, service_healthy, service_started
+        deploy:
+            resources:
+                limits:
+#                    cpus: "0.1"
+                    memory: 500M
+        networks:
+            - s14321k
+        environment:
+            SPRING_APPLICATION_NAME: Acounts
+            SPRING_PROFILES_ACTIVE: default
+            SPRING_CONFIG_IMPORT: "configserver:http://configserver:8888/"
+
+
+    loans:
+        image: s14321k/loans:d1
+        container_name: loans-ms
+        build: .
+        ports:
+            - "8082:8082"
+        depends_on:
+            configserver:
+                condition: service_healthy # service_completed_successfully, service_healthy, service_started
+        deploy:
+            resources:
+                limits:
+                    cpus: "0.1"
+                    memory: 500M
+        networks:
+            - s14321k
+        environment:
+            SPRING_APPLICATION_NAME: Loans
+            SPRING_PROFILES_ACTIVE: default
+            SPRING_CONFIG_IMPORT: "configserver:http://configserver:8888/"
+
+
+    Cards:
+        image: docker.io/s14321k/cards:d1
+        container_name: cards-ms
+        build: .
+        ports:
+            - "8083:8083"
+        depends_on:
+            configserver:
+                condition: service_healthy # service_completed_successfully, service_healthy, service_started
+        deploy:
+            resources:
+                limits:
+                    cpus: "0.1"
+                    memory: 500M
+        networks:
+            - s14321k
+        environment:
+            SPRING_APPLICATION_NAME: Cards
+            SPRING_PROFILES_ACTIVE: default
+            SPRING_CONFIG_IMPORT: "configserver:http://configserver:8888/"
+
+
+networks:
+    s14321k:
+        driver: bridge

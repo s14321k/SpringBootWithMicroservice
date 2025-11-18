@@ -151,8 +151,12 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
          	<version>2.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 	
 	<!-- Add this for versioning management of cloud dependencies -->
 	<dependencyManagement>
@@ -169,10 +173,10 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                
                 <configuration>
 					<excludes>
 						<exclude>
@@ -181,6 +185,17 @@
 						</exclude>
 					</excludes>
 				</configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <to>
+                        <image>eazybytes/${project.artifactId}:s9</image>
+                    </to>
+                </configuration>
             </plugin>
         </plugins>
     </build>
